@@ -442,6 +442,7 @@ li.counter li:before {
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.4s;
+  margin-left: 30px;
 }
 
 .reg-btn:hover {
@@ -1631,6 +1632,7 @@ body.lock {
 
   .reg-btn {
     padding: 10px 70px;
+    margin-left: 0;
   }
 
   .wrapper-logo.mob {
