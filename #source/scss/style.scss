@@ -28,7 +28,7 @@
 $font-family: "HelveticaNeue";
 $font-style: normal;
 $font-weight: 400;
-$font-size: 14px;
+$font-size: 16px;
 // </шрифт по умолчанию>----------------------------------------------------
 
 // </ШРИФТЫ>----------------------------------------------------------------
@@ -37,7 +37,7 @@ $font-size: 14px;
 // <ПЕРЕМЕННЫЕ>-------------------------------------------------------------
 $max-width: 1200;
 $min-width: 320;
-$body-font-size: 14;
+$body-font-size: 16;
 $padd-container: 20;
 // </ПЕРЕМЕННЫЕ>------------------------------------------------------------
 
@@ -199,6 +199,7 @@ h6 {
 }
 .header.top{
     top: -100%;
+    transition: 0.4s;
 }
 .header-top{
     width: 100%;
@@ -232,6 +233,7 @@ h6 {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .header__list li:last-child{
     border-right: 1px solid #529952;
@@ -335,7 +337,6 @@ h6 {
     align-items: flex-end;
 }
 .wrapper-buttons{
-    margin-left: 30px;
     display: flex;
     align-items: center;
 }
@@ -366,8 +367,6 @@ h6 {
     font-size: 14px;
     text-transform: uppercase;
     transition: 0.4s;
-
-    margin-left: 20px;
 }
 .reg-btn:hover{
     color: #fff;
@@ -605,7 +604,7 @@ input[type=number]{
 }
 
 .zaimer-calc{
-    padding: 20px 25px;
+    padding: 20px 40px;
     background-image: url(../img/green_background.png);
 
     display: flex;
@@ -648,7 +647,7 @@ input[type=number]{
     padding-bottom: 15px;
 }
 .zaimer-list{
-    
+    padding-bottom: 15px;
 
     &__item{
         position: relative;
@@ -859,6 +858,30 @@ p{
 .pc-version{
     display: flex;
 }
+
+// why
+.why-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.why{
+    &__subtitle{
+        font-size: 20px;
+        font-weight: bold;
+        color: #4b5959;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    &__item{
+        margin: 0 10px 10px 10px;
+        flex: 0 0 calc(100%/3 - 20px);
+        
+    }
+    
+}
+
+
 // </ОСНОВНОЙ БЛОК>----------------------------------------------------------
 
 
